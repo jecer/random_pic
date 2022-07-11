@@ -4,10 +4,10 @@ import string
 import requests
 from tqdm import tqdm
 
-what_pic = input('Сколько картинок надо: ')
-color = input('Черно-белое? 1-да, 2-нет: ')
-width = input('Ширина: ')
-height = input('Высота: ')
+what_pic = input('How many pictures are needed: ')
+color = input('Is it black and white? 1-Yes, 2-No: ')
+width = input('Width: ')
+height = input('Height: ')
 if os.path.exists('img'):
     pass
 else:
@@ -20,7 +20,7 @@ if color == '2':
     url = f'https://picsum.photos/{width}/{height}'
 
 else:
-    print('Ты читать не умеешь? Либо 1, либо 2!')
+    print("Can't you read? It's either 1 or 2!")
 
 
 def random_char(y):
