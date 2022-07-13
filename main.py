@@ -19,9 +19,6 @@ if color == '1':
 if color == '2':
     url = f'https://picsum.photos/{width}/{height}'
 
-else:
-    print("Can't you read? It's either 1 or 2!")
-
 
 def random_char(y):
     return ''.join(random.choice(string.ascii_letters) for x in range(y))
